@@ -4,8 +4,8 @@ import ProductRepository from "../../../infrastructure/product/repository/sequel
 import ProductFactory from "../../../domain/product/factory/product.factory";
 import ListProductUseCase from "./list.product.usecase";
 
-const product1 = ProductFactory.create("a", "Product 1", 10);
-const product2 = ProductFactory.create("a", "Product 2", 20);
+const product1 = ProductFactory.createProduct("Product 1", 10);
+const product2 = ProductFactory.createProduct("Product 2", 20);
 
 describe("Test find all products use case", () => {
 

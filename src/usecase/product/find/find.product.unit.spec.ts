@@ -2,7 +2,7 @@ import { Sequelize } from "sequelize-typescript";
 import FindProductUseCase from "./find.product.usecase";
 import ProductFactory from "../../../domain/product/factory/product.factory";
 
-const product = ProductFactory.create('a', 'Product 1', 10);
+const product = ProductFactory.createProduct('Product 1', 10);
 
 const MockRepository = () => {
     return {
@@ -14,8 +14,6 @@ const MockRepository = () => {
 }
 
 describe("Unit Test find product use case", () => {
-
-
 
     it("should find a product", async () => {
         

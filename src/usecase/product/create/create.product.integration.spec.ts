@@ -4,7 +4,7 @@ import ProductRepository from "../../../infrastructure/product/repository/sequel
 import ProductFactory from "../../../domain/product/factory/product.factory";
 import CreateProductUseCase from "./create.product.usecase";
 
-const product = ProductFactory.create("a", "Product 1", 10);
+const product = ProductFactory.createProduct("Product 1", 10);
 
 describe("Test create product use case", () => {
 

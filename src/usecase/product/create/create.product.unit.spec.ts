@@ -15,8 +15,6 @@ const MockRepository = () => {
     };
 }
 
-
-
 describe("Unit Test create product use case", () => {
 
     it("should create a product", async () => {

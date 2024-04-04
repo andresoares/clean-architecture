@@ -5,7 +5,7 @@ import ProductRepository from "../../../infrastructure/product/repository/sequel
 import FindProductUseCase from "./find.product.usecase";
 import ProductFactory from "../../../domain/product/factory/product.factory";
 
-const product = ProductFactory.create("a", "Product 1", 10);
+const product = ProductFactory.createProduct("Product 1", 10);
 
 describe("Test find product use case", () => {
 

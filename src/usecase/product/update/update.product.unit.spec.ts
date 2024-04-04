@@ -10,7 +10,7 @@ const input = {
     price: 20
 }
 
-const product = ProductFactory.create("a", "Product 1", 10);
+const product = ProductFactory.createProduct( "Product 1", 10);
 input.id = product.id;
 
 const MockRepository = () => {
